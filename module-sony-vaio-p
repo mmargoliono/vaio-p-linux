@@ -1,0 +1,10 @@
+#common
+0x0D prog3 #fn + f9
+0x0E prog4 #fn + f10
+
+#VPCP111kx
+0x29 prog1 #vaio button
+0x1A prog1 
+
+#VGN-p33GK
+0x19 prog2

@@ -1,0 +1,1 @@
+ENV{DMI_VENDOR}=="Sony*", ATTR{[dmi/id]product_name}=="VPCP111*|VGN-P33GK*", ATTRS{name}=="Sony Vaio Keys", RUN+="keymap $name module-sony-vaio-p"
