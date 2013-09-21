@@ -56,9 +56,8 @@ keymap for the file
 Create a mapping file for hwdb (__88-vaio-p-hwdb__).
 /etc/udev/hwdb/88-vaio-p.hwdb
 
-Update hwdb
-> udevadm hwdb --update
-> reboot
+Update hwdb and restart
+> udevadm hwdb --update && reboot
 
 
 xbindkeys helper
