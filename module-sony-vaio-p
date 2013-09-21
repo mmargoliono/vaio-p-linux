@@ -4,7 +4,7 @@
 
 #VPCP111kx
 0x29 prog1 #vaio button
-0x1A prog1 
 
 #VGN-p33GK
+0x1A prog1
 0x19 prog2

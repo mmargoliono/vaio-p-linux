@@ -1,5 +1,7 @@
 keyboard:name:Sony Vaio Keys:dmi:bvn*:bvr*:bd*:svnSony*:pn*VPCP111*:pvr*
-#keyboard:name:Sony Vaio Keys:dmi:bvn*:bvr*:bd*:svnSony*:pn*VGN-P33GK*:pvr*
+keyboard:name:Sony Vaio Keys:dmi:bvn*:bvr*:bd*:svnSony*:pn*VGN-P33GK*:pvr*
  KEYBOARD_KEY_0d=prog3 #fn + f9
  KEYBOARD_KEY_0e=prog4 #fn + f10
- KEYBOARD_KEY_29=prog1 #vaio button
+ KEYBOARD_KEY_29=prog1 #vaio button vpcp111
+ KEYBOARD_KEY_1a=prog1 #left button vgn-p33gk
+ KEYBOARD_KEY_19=prog2 #right button vgn-p33gk

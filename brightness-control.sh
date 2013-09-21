@@ -1,9 +1,7 @@
 #/!bin/bash
 
 brightness=`cat /sys/class/backlight/psb-bl/brightness`
-#brightness=`cat /sys/class/backlight/emgd_psb/brightness`
 
-#increment=1
 increment=5
 
 if [ "$1" == + ]; then
@@ -18,7 +16,6 @@ else
 	exit 0;
 fi
 
-#echo $brightness > /sys/class/backlight/emgd_psb/brightness
 echo $brightness > /sys/class/backlight/psb-bl/brightness
 
 notify-send "brightness: $brightness"
