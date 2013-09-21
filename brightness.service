@@ -1,0 +1,10 @@
+[Unit]
+Description=Helper to enable changing brightness as normal user
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'chmod a+w /sys/class/backlight/psb-bl/brightness; echo 20 > /sys/class/backlight/psb-bl/brightness'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
