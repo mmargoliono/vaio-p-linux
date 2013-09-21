@@ -1,0 +1,35 @@
+# Increment / decrement using brightness key (fn + f5/f6)
+"~/bin/brightness-control.sh -"
+XF86MonBrightnessDown
+
+"~/bin/brightness-control.sh +"
+XF86MonBrightnessUp
+
+# Set brightness to low / medium using shift + brightness key
+"echo 20 > /sys/class/backlight/psb-bl/brightness"
+Shift + XF86MonBrightnessDown
+
+"echo 50 > /sys/class/backlight/psb-bl/brightness"
+Shift + XF86MonBrightnessUp
+
+
+
+# Set resolution to higher/lower using zoom key 
+"xrandr --output LVDS-0 --mode 1600x768 --rate 59.9 --output 
+VGA-0 --off"
+XF86Launch3
+
+"xrandr --output LVDS-0 --mode 1256x600 --output VGA-0 --off"
+XF86Launch4
+
+# Set external full-hd monitor above netbook monitor using 
+shift + zoom out, use zoomin/zoomout to disconnect
+"xrandr --output LVDS-0 --mode 1600x768 --rate 59.9 --output 
+VGA-0 --mode 1920x1080 --above LVDS-0"
+Shift + XF86Launch3
+
+# Set external monitor above netbook monitor using shift + zoom 
+in, use zoomin/zoomout to disconnect
+"xrandr --output LVDS-0 --mode 1600x768 --rate 59.9 --output 
+VGA-0 --mode 1280x1024 --above LVDS-0"
+Shift + XF86Launch4
